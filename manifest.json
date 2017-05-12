@@ -1,9 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name":    "Test Extension",
-  "version": "0.0",
+  "name":    "DC2CP",
+  "description": "Double Click to Copy and paste it to clipboard",
+  "version": "1.0",
   "offline_enabled": true,
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png" },
 
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],

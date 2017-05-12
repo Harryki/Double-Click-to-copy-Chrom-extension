@@ -7,7 +7,7 @@ var listener = function() {
         // alert()
         // var BodyHTML = document.body.innerHTML;
 
-        var textFromPrompt = window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+        var textFromPrompt = window.prompt("Copy to clipboard", text);
         if(textFromPrompt != null){
             // alert("copied to clipboard")
             try {
