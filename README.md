@@ -1,4 +1,4 @@
-# DB2CP
+# DC2CP
 
 Double click to copy it to your clipboard
 
