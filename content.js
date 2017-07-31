@@ -1,9 +1,19 @@
 var listener = function() {
-    var selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-        var range = selection.getRangeAt(0);
-        var text = range.cloneContents().textContent;
-        //console.log(text);
+    
+
+}
+
+// document.addEventListener("dblclick", listener);
+
+window.addEventListener('click', function (evt) {
+    if (evt.detail === 3) {
+        // alert('triple click!');
+
+        var selection = window.getSelection();
+        if (selection.rangeCount > 0) {
+            var range = selection.getRangeAt(0);
+            var text = range.cloneContents().textContent;
+            console.log(text);
         // alert()
         // var BodyHTML = document.body.innerHTML;
 
@@ -30,7 +40,5 @@ var listener = function() {
         // }
 
     };
-
 }
-document.addEventListener('dblclick', listener);
-
+});
